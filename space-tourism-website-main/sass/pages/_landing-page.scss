@@ -1,0 +1,151 @@
+#home-page {
+    .main-content {
+        align-self: flex-end;
+        margin-bottom: 14vh;
+        .hero {
+            padding-bottom: 4px;
+            .container {
+                display: flex;
+                justify-content: space-between;
+            }
+            &__text {
+                &__subtitle {
+                    font-family: 'Barlow Condensed', serif;
+                    font-size: var(--font-size-subheading-primary);
+                    font-weight: 400;
+                    color: $color-secondary;
+                    letter-spacing: 4.75px;
+                    text-transform: uppercase;
+                }
+                &__title {
+                    font-family: 'Bellefair', serif;
+                    font-size: var(--font-size-heading-primary);
+                    font-weight: 400;
+                    color: $color-tertiary;
+                    text-transform: uppercase;
+                    margin: 24px 0;
+                }
+            }
+            &__explore {
+                align-self: flex-end;
+                button {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    outline: none;
+                    background: none;
+                    border: none;
+                    width: 274px;
+                    height: 274px;
+                    background-color: $color-tertiary;
+                    border-radius: 100%;
+                    position: relative;
+                    cursor: pointer;
+                    font-size: var(--font-size-heading-quaternary);
+                    font-weight: 400;
+                    font-family: 'Bellefair', serif;
+                    color: $color-primary;
+                    letter-spacing: 2px;
+                    &:after {
+                        content: '';
+                        display: block;
+                        width: 274px;
+                        height: 274px;
+                        background-color: $color-hover-button;
+                        position: absolute;
+                        border-radius: 100%;
+                        z-index: -1;
+                        transition: all 0.3s;
+                    }
+                    &:hover::after {
+                        width: 450px;
+                        height: 450px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width: $breakpoint-xxl) {
+    #home-page {
+        .main-content {
+            align-self: center;
+            margin-bottom: 12vh;
+            .hero {
+                &__explore {
+                    align-self: center;
+                    transform: translateX(-50%);
+                }
+            }
+        }
+    }    
+}
+@media (max-width: $breakpoint-xl) {
+    #home-page {
+        .main-content {
+            align-self: flex-start;
+            margin-top: 11vh;
+            margin-bottom: 5vh;
+            .hero {
+                .container {
+                    text-align: center;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    gap: 100px;
+                }
+                &__text {
+                    &__subtitle {
+                        font-size: var(--font-size-subheading-primary);
+                        letter-spacing: 3.38px;
+                    }
+                }
+                &__explore {
+                    margin: 0 auto;
+                    button {
+                        width: 263px;
+                        height: 263px;
+                        &:after {
+                            width: 263px;
+                            height: 263px;
+                        }
+                        &:hover::after {
+                            width: 424px;
+                            height: 424px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+} 
+@media (max-width: $breakpoint-md) {
+    #home-page {
+        .main-content {
+            margin-top: 5vh;
+            margin-bottom: 10vh;
+            .hero {
+                &__text {
+                    &__subtitle {  
+                        letter-spacing: 2.7px;
+                    }
+                }
+                &__explore {
+                    button {
+                        width: 150px;
+                        height: 150px;
+                        &:after {
+                            width: 150px;
+                            height: 150px;
+                        }
+                        &:hover::after {
+                            width: 220px;
+                            height: 220px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+

@@ -1,0 +1,15 @@
+.paragraph {
+    line-height: 32px;
+    max-width: 444px;
+}
+@media (max-width: $breakpoint-xl) {
+    .paragraph {
+        margin: 0 auto;
+        text-align: center;
+    }
+}
+@media (max-width: $breakpoint-md) {
+    .pararagraph {
+        line-height: 28px;
+    }
+}

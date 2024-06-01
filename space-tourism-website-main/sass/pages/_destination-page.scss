@@ -1,0 +1,194 @@
+#destination-page {
+    .main-content {
+        margin-bottom: 12vh;
+        .planets {
+            &__slideshow {
+                &__item {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: flex-end;
+                    max-width: 1113.59px;
+                    position: relative;
+                    &__img {
+                        flex: 1 1;
+                        display: flex;
+                        justify-content: center;
+                        padding-right: 60px;
+                        img {
+                            display: block;
+                            width: 445px;
+                            height: auto; 
+                        }                       
+                    }
+                    &__text {
+                        &__title {
+                            font-family: 'Bellefair', serif;
+                            font-size: var(--font-size-heading-secondary);
+                            font-weight: 400;
+                            color: $color-tertiary;
+                            text-transform: uppercase;
+                            text-shadow: 0px 0px 20px rgba(207, 207, 207, 0.6);
+                        }
+                        &__paragraph {
+                            margin: 18px 0 54px 0;
+                            line-height: 32px;
+                        }
+                        &__more {
+                            display: flex;
+                            text-transform: uppercase;
+                            padding-top: 35px;
+                            border-top: 1px solid $color-transparent-tertiary;
+                            div {
+                                flex: 1 1;
+                                span {
+                                    font-family: 'Barlow Condensed', sans-serif;
+                                    font-size: var(--font-size-subheading-secondary);
+                                    font-weight: 400;
+                                    letter-spacing: 2.36px;
+                                    color: $color-secondary;
+                                    display: block;
+                                    margin-bottom: 16px;
+                                }
+                                p {
+                                    font-family: 'Bellefair', serif;
+                                    font-weight: 400;
+                                    font-size: var(--font-size-subheading-primary);
+                                    color: $color-tertiary;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .owl-carousel {
+        &.owl-loaded {
+            max-width: 1113.59px;
+        }
+        .owl-dots {
+            width: auto;
+            right:169px;
+            position: absolute;
+            margin: 0 auto;
+            top: -37px;
+            .owl-dot {
+                margin: 0 15px;
+                &:last-child {
+                    margin-right: 0;
+                }
+                &:first-child {
+                    margin-left: 0;
+                }
+                button {
+                    font-family: 'Barlow Condensed', sans-serif;
+                    font-size: var(--font-size-nav);
+                    font-weight: 400;
+                    color: $color-secondary;
+                    background: none;
+                    border: none;
+                    padding: 0;
+                    cursor: pointer;
+                    letter-spacing: 2.7px;
+                    display: block;
+                    padding-bottom: 12px;
+                    border-bottom: 3px solid transparent;
+                    transition: all 0.225s;
+                    text-transform: uppercase;
+                    &:hover {
+                        border-bottom: 3px solid $color-hover;
+                    }
+                }
+                &.active button {
+                    color: $color-tertiary;
+                    border-bottom: 3px solid $color-tertiary;
+                }
+            }
+        }
+    }
+}
+@media (max-width: $breakpoint-xl) {
+    #destination-page {
+        .main-content {
+            margin-bottom: 10vh;
+            .planets {
+                &__slideshow {
+                    &__item {
+                        gap: 100px;
+                        flex-direction: column;
+                        align-items: center;
+                        text-align: center;
+                        &__img {
+                            padding-right: 0px;
+                            align-items: center;
+                            img {
+                                width: 300px;
+                                height: 300px;
+                            }                       
+                        }
+                        &__text {
+                            &__paragraph {
+                                max-width: 573px;
+                            }
+                            &__more {
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .owl-carousel {
+            .owl-dots {
+                right: 0;
+                left: 0;
+                top: 45%;
+            }
+        }
+    }
+}
+@media (max-width: $breakpoint-md) {
+    #destination-page {
+        .main-content {
+            .planets {
+                &__slideshow {
+                    &__item {
+                        gap: 80px;
+                        flex-direction: column;
+                        align-items: center;
+                        text-align: center;
+                        &__img {
+                            padding-right: 0px;
+                            align-items: center;
+                            img {
+                                width: 170px;
+                                height: 170px;
+                            }                       
+                        }
+                        &__text {
+                            &__paragraph {
+                                max-width: 573px;
+                            }
+                            &__more {
+                                width: 100%;
+                                flex-direction: column;
+                                align-items: center;
+                                gap: 30px;
+                                p {
+                                    font-size: 28px !important;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .owl-carousel {
+            .owl-dots {
+                right: 0;
+                left: 0;
+                top: 27%;
+            }
+        }
+    }
+}
