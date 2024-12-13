@@ -1,0 +1,37 @@
+// Abstracts
+
+@import "./abstracts/_breakpoints";
+@import "./abstracts/_colors";
+@import "./abstracts/_texts";
+
+// Base
+
+@import "./base/_reset";
+@import "./base/_typograph";
+
+// Components
+
+@import "./components/_page-background-image";
+@import "./components/_subtitle";
+@import "./components/_paragraph";
+@import "./components/_development";
+
+// Layout
+
+@import "./layout/_logo";
+@import "./layout/_grid-page";
+@import "./layout/_container";
+@import "./layout/_header";
+
+// Pages
+
+@import "./pages/_landing-page";
+@import "./pages/_destination-page";
+@import "./pages/_crew-page";
+@import "./pages/_technology";
+
+// Vendors
+
+@import "./vendors/_normalize";
+
+//node-sass -w --output-style compressed sass/style.scss css/style.css

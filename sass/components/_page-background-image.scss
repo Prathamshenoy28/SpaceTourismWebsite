@@ -1,0 +1,88 @@
+#home-page {
+    background: $color-primary 
+                url("./../assets/home/background-home-desktop.jpg") 
+                no-repeat 
+                center center;
+    background-size: cover;
+}
+#destination-page {
+    background: $color-primary 
+                url("./../assets/destination/background-destination-desktop.jpg") 
+                no-repeat 
+                center center;
+    background-size: cover;
+}
+#crew-page {
+    background: $color-primary 
+                url("./../assets/crew/background-crew-desktop.jpg") 
+                no-repeat 
+                center center;
+    background-size: cover;
+}
+#technology-page {
+    background: $color-primary 
+                url("./../assets/technology/background-technology-desktop.jpg") 
+                no-repeat 
+                center center;
+    background-size: cover;
+}
+@media (max-width: $breakpoint-xl) {
+    #home-page {
+        background: $color-primary 
+                    url("./../assets/home/background-home-tablet.jpg") 
+                    no-repeat 
+                    center center;
+        background-size: cover;
+    }
+    #destination-page {
+        background: $color-primary 
+                    url("./../assets/destination/background-destination-tablet.jpg") 
+                    no-repeat 
+                    center center;
+        background-size: cover;
+    }
+    #crew-page {
+        background: $color-primary 
+                    url("./../assets/crew/background-crew-tablet.jpg") 
+                    no-repeat 
+                    center center;
+        background-size: cover;
+    }
+    #technology-page {
+        background: $color-primary 
+                    url("./../assets/technology/background-technology-tablet.jpg") 
+                    no-repeat 
+                    center center;
+        background-size: cover;
+    }
+}
+@media (max-width: $breakpoint-md) {
+    #home-page {
+        background: $color-primary 
+                    url("./../assets/home/background-home-mobile.jpg") 
+                    no-repeat 
+                    center center;
+        background-size: cover;
+    }
+    #destination-page {
+        background: $color-primary 
+                    url("./../assets/destination/background-destination-mobile.jpg") 
+                    no-repeat 
+                    center center;
+        background-size: cover;
+    }
+    #crew-page {
+        background: $color-primary 
+                    url("./../assets/crew/background-crew-mobile.jpg") 
+                    no-repeat 
+                    center center;
+        background-size: cover;
+    }
+    #technology-page {
+        background: $color-primary 
+                    url("./../assets/technology/background-technology-mobile.jpg") 
+                    no-repeat 
+                    center center;
+        background-size: cover;
+    }
+}
